@@ -1,6 +1,6 @@
 {
   "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
+  "productName": "Moses",
   "version": "0.12.0",
   "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
   "scripts": {
@@ -31,7 +31,7 @@
   },
   "browserslist": "electron 1.6",
   "build": {
-    "productName": "ElectronReact",
+    "productName": "Moses",
     "appId": "org.develar.ElectronReact",
     "files": [
       "dist/",
@@ -186,11 +186,17 @@
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
+    "bitcoinjs-lib": "^3.2.1",
+    "bootstrap": "^4.0.0-beta.2",
+    "chart.js": "^2.7.1",
     "devtron": "^1.4.0",
     "electron-debug": "^1.2.0",
     "font-awesome": "^4.7.0",
     "history": "^4.6.3",
+    "moment": "^2.19.1",
+    "prop-types": "^15.6.0",
     "react": "^15.6.1",
+    "react-chartjs-2": "^2.6.4",
     "react-dom": "^15.6.1",
     "react-hot-loader": "3.0.0-beta.6",
     "react-redux": "^5.0.5",
@@ -199,6 +205,7 @@
     "react-router-redux": "^5.0.0-alpha.6",
     "redux": "^3.7.1",
     "redux-thunk": "^2.2.0",
+    "request": "^2.83.0",
     "source-map-support": "^0.4.15"
   },
   "devEngines": {
