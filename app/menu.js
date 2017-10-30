@@ -10,8 +10,9 @@ export default class MenuBuilder {
 
   buildMenu() {
     if (process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true') {
-      this.setupDevelopmentEnvironment();
+      this.mainWindow.openDevTools();
     }
+    this.setupDevelopmentEnvironment();
 
     let template;
 
@@ -28,7 +29,6 @@ export default class MenuBuilder {
   }
 
   setupDevelopmentEnvironment() {
-    this.mainWindow.openDevTools();
     this.mainWindow.webContents.on('context-menu', (e, props) => {
       const { x, y } = props;
 
